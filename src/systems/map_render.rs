@@ -38,29 +38,7 @@ pub fn map_render(
                     ),
                     glyph
                 );    
-            /*    match map.tiles[idx] {
-                    TileType::Floor => {
-                        draw_batch.set(
-                            pt - offset, 
-                            ColorPair::new(
-                                tint, // (3)
-                                BLACK
-                            ),
-                            to_cp437('.')
-                        );
-                    }
-                    TileType::Wall => {
-                        draw_batch.set(
-                            pt - offset, 
-                            ColorPair::new(
-                                tint, 
-                                BLACK
-                            ),
-                            to_cp437('#')
-                        );
-                    }
-                } */
-           } 
+            } 
         }
     }
     draw_batch.submit(0).expect("Batch error");
